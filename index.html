@@ -24,32 +24,35 @@
   </head>
   <body>
     <header>
-      <div class="inline-flex">
-        <img
-          class="logo-light"
-          src="/starter-code/assets/images/logo-light.svg"
-          alt="company logo"
-        />
-        <button class="button-secondary" type="button">Apply for access</button>
-      </div>
-      <div class="header-cta">
-        <h1 class="heading-L header-h1">
-          Data <span>tailored</span> to your needs.
-        </h1>
-        <button type="button">Learn More</button>
-      </div>
+      <div class="img-container">
+        <div class="nav flex container">
+          <img
+            class="logo-light"
+            src="/starter-code/assets/images/logo-light.svg"
+            alt="company logo"
+          />
+          <button class="button-secondary" type="button">
+            Apply for access
+          </button>
+        </div>
 
-      <div class="patterns">
-        <img
-          class="pattern-left"
-          src="/starter-code/assets/images/bg-pattern-1.svg"
-          alt=""
-        />
-        <img
-          class="pattern-right"
-          src="/starter-code/assets/images/bg-pattern-2.svg"
-          alt=""
-        />
+        <div class="header-cta container">
+          <h1>Data <span>tailored</span> to your needs.</h1>
+          <button class="button__primary" type="button">Learn More</button>
+        </div>
+
+        <div class="patterns">
+          <img
+            class="pattern-left"
+            src="/starter-code/assets/images/bg-pattern-1.svg"
+            alt=""
+          />
+          <img
+            class="pattern-right"
+            src="/starter-code/assets/images/bg-pattern-2.svg"
+            alt=""
+          />
+        </div>
       </div>
       <img
         class="phone"
@@ -57,70 +60,77 @@
         alt=""
       />
     </header>
-    <div class="info">
-      <ul role="list">
-        <li>
-          <div class="list-content">
-            <div class="h2"><h2 class="list-number">1</h2></div>
-            <div class="list-info">
-              <h3 class="list-title">Actionable insights</h3>
+
+    <main>
+      <section class="ghost-white">
+        <div class="info container">
+          <ul role="list">
+            <li class="flex column">
+              <div class="number-icon">1</div>
+              <div class="list-info">
+                <h3>Actionable insights</h3>
+                <p>
+                  Optimize your products, improve customer satisfaction and stay
+                  ahead of the competition with our product data analytics.
+                </p>
+              </div>
+            </li>
+            <li class="flex column">
+              <div class="number-icon">2</div>
+              <div class="list-info">
+                <h3>Data-driven decisions</h3>
+                <p>
+                  Make data-driven decisions with our product data analytics.
+                  Our AI-generated reports help you unlock insights hidden in
+                  your product data.
+                </p>
+              </div>
+            </li>
+            <li class="flex column">
+              <div class="number-icon">3</div>
+              <div class="list-info">
+                <h3>Always affordable</h3>
+                <p>
+                  Always affordable pricing that scales with your business. Get
+                  top-quality product data analytics services without hidden
+                  costs or unexpected fees.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="profile">
+        <div class="section container">
+          <img
+            src="/starter-code/assets/images/image-founder.webp"
+            alt=""
+            class="profile-pic"
+          />
+          <div class="cta">
+            <div class="container__wide">
+              <h2>Be the first to test</h2>
               <p>
-                Optimize your products, improve customer satisfaction and stay
-                ahead of the competition with our product data analytics.
+                Hi, I'm Louis Graham, the founder of the company. Book a demo
+                call with me to become a beta tester for our app and kickstart
+                your company. Apply for access below and I’ll be in touch to
+                schedule a call.
               </p>
+              <button class="button__primary" type="button">
+                Apply for access
+              </button>
             </div>
+            <img
+              class="footer-img"
+              src="/starter-code/assets/images/bg-pattern-1.svg"
+              alt=""
+            />
           </div>
-        </li>
-        <li>
-          <div class="list-content">
-            <div class="h2"><h2 class="list-number">2</h2></div>
-            <div class="list-info">
-              <h3 class="list-title">Data-driven decisions</h3>
-              <p>
-                Make data-driven decisions with our product data analytics. Our
-                AI-generated reports help you unlock insights hidden in your
-                product data
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="list-content">
-            <div class="h2"><h2 class="list-number">3</h2></div>
-            <div class="list-info">
-              <h3 class="list-title">Always affordable</h3>
-              <p>
-                Always affordable pricing that scales with your business. Get
-                top-quality product data analytics services without hidden costs
-                or unexpected fees
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="section">
-      <img
-        src="/starter-code/assets/images/image-founder.webp"
-        alt=""
-        class="profile-pic"
-      />
-      <div class="cta">
-        <h1 class="heading-S">Be the first to test</h1>
-        <p>
-          Hi, I'm Louis Graham, the founder of the company. Book a demo call
-          with me to become a beta tester for our app and kickstart your
-          company. Apply for access below and I’ll be in touch to schedule a
-          call.
-        </p>
-        <button type="button">Apply for access</button>
-      </div>
-      <img
-        class="footer-img"
-        src="/starter-code/assets/images/bg-pattern-1.svg"
-        alt=""
-      />
-    </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div>
         <img src="/starter-code/assets/images/logo-dark.svg" alt="" />
