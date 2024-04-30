@@ -262,13 +262,15 @@ main {
 
 /* bottom section */
 .profile-pic {
-  margin-top: 6.25rem;
   width: 281px;
+  position: relative;
   margin-inline: auto;
+  top: 3rem;
+  z-index: -1;
 }
 
 .container__wide {
-  width: 80%;
+  width: 85%;
   margin-inline: auto;
 }
 
@@ -277,8 +279,7 @@ main {
   color: var(--clr-neutral-white);
   padding: 2rem 0;
   text-align: center;
-  bottom: 3rem;
-  margin-inline: auto;
+  margin-bottom: 4.625rem;
 }
 
 .cta p {
@@ -415,32 +416,27 @@ footer {
     margin-left: 1rem;
   }
 
+  /* bottom section */
   .section {
     width: 100%;
-    max-width: 1112px;
     display: grid;
+    max-width: 1440px;
     border: 2px solid red;
   }
 
   .profile-pic {
-    margin-left: 2rem;
+    width: 281px;
+    aspect-ratio: 1;
+    left: 3.5%;
+    margin: 0;
+    top: 8rem;
   }
 
   .cta {
-    width: 70%;
-    max-width: 730px;
-    margin: 0;
+    width: 68%;
     margin-left: auto;
-    margin-top: -4.5rem;
-    margin-right: 2rem;
-    border: 2px solid red;
-    padding: 4rem 2rem;
-    text-align: left;
-  }
-
-  .container__wide {
-    width: 90%;
-    border: 2px solid red;
+    margin-right: 2.5rem;
+    padding: 4rem 0;
   }
 
   .cta p {
@@ -474,22 +470,44 @@ footer {
   }
 
   .profile {
-    position: relative;
-    height: 647px;
     border: 2px solid red;
-    margin-top: 8rem;
-  }
-
-  .cta {
+    inset: 0;
     margin: 0;
-    margin-left: auto;
+    margin-top: 6.875rem;
+    position: relative;
   }
 
   .profile-pic {
     position: absolute;
     width: 477px;
-    height: 477px;
-    border-radius: 50%;
-    bottom: 0;
+    left: 10%;
+    top: 0;
+    right: 90%;
+  }
+
+  .cta {
+    padding: 4rem;
+    text-align: left;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: 11.5%;
+    width: min(95%, 730px);
+  }
+
+  .container__wide {
+    width: 100%;
+    outline: 2px solid red;
+  }
+
+  .cta p {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .cta .button__primary {
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: -0.18px;
+    line-height: 32px;
   }
 }
