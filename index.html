@@ -12,53 +12,46 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="starter-code/assets/images/" />
-    <link rel="stylesheet" href="starter-code/assets/fonts/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope&display=swap"
-      rel="stylesheet"
-    />
 
     <title>Frontend Mentor | Workit landing page</title>
   </head>
   <body>
     <header>
-      <div class="img-container">
-        <div class="nav flex container">
-          <img
-            class="logo-light"
-            src="/starter-code/assets/images/logo-light.svg"
-            alt="company logo"
-          />
-          <button class="button-secondary" type="button">
-            Apply for access
-          </button>
-        </div>
-
-        <div class="header-cta container">
-          <h1>Data <span>tailored</span> to your needs.</h1>
-          <button class="button__primary" type="button">Learn More</button>
-        </div>
-
-        <div class="patterns">
-          <img
-            class="pattern-left"
-            src="/starter-code/assets/images/bg-pattern-1.svg"
-            alt=""
-          />
-          <img
-            class="pattern-right"
-            src="/starter-code/assets/images/bg-pattern-2.svg"
-            alt=""
-          />
-        </div>
+      <div class="nav flex container__wide">
+        <img
+          class="logo-light"
+          src="/starter-code/assets/images/logo-light.svg"
+          alt="company logo"
+        />
+        <button class="button__secondary" type="button">
+          Apply for access
+        </button>
       </div>
-      <img
-        class="phone"
-        src="/starter-code/assets/images/image-hero.webp"
-        alt=""
-      />
+
+      <div class="header__cta">
+        <h1>Data <span>tailored</span> to your needs.</h1>
+        <button class="button__primary" type="button">Learn More</button>
+      </div>
+
+      <div class="patterns hidden">
+        <img
+          class="pattern-left"
+          src="/starter-code/assets/images/bg-pattern-1.svg"
+          alt=""
+        />
+        <img
+          class="pattern-right"
+          src="/starter-code/assets/images/bg-pattern-2.svg"
+          alt=""
+        />
+      </div>
+      <div class="header__img">
+        <img
+          class="phone"
+          src="/starter-code/assets/images/image-hero.webp"
+          alt=""
+        />
+      </div>
     </header>
 
     <main>
@@ -101,15 +94,15 @@
         </div>
       </section>
 
-      <section class="profile">
-        <div class="section container">
+      <section class="developer">
+        <div class="developer__profile container">
           <img
+            class="developer__profile__img"
             src="/starter-code/assets/images/image-founder.webp"
             alt=""
-            class="profile-pic"
           />
-          <div class="cta">
-            <div class="container__wide">
+          <div class="developer__cta">
+            <div class="developer__cta__container">
               <h2>Be the first to test</h2>
               <p>
                 Hi, I'm Louis Graham, the founder of the company. Book a demo
@@ -122,7 +115,7 @@
               </button>
             </div>
             <img
-              class="footer-img"
+              class="patten__bottom hidden"
               src="/starter-code/assets/images/bg-pattern-1.svg"
               alt=""
             />
@@ -131,16 +124,28 @@
       </section>
     </main>
 
-    <footer>
-      <div>
-        <img src="/starter-code/assets/images/logo-dark.svg" alt="" />
-      </div>
-      <div class="icons">
-        <img src="/starter-code/assets/images/icon-facebook.svg" alt="" />
-        <img src="/starter-code/assets/images/icon-twitter.svg" alt="" /><img
-          src="/starter-code/assets/images/icon-instagram.svg"
-          alt=""
-        />
+    <footer class="footer">
+      <div class="grid">
+        <div class="footer__logo">
+          <img src="/starter-code/assets/images/logo-dark.svg" alt="" />
+        </div>
+        <div class="footer__icons flex">
+          <img
+            class="footer__icons__facebook"
+            src="/starter-code/assets/images/icon-facebook.svg"
+            alt=""
+          />
+          <img
+            class="footer__icons__twitter"
+            src="/starter-code/assets/images/icon-twitter.svg"
+            alt=""
+          />
+          <img
+            class="footer__icons__instagram"
+            src="/starter-code/assets/images/icon-instagram.svg"
+            alt=""
+          />
+        </div>
       </div>
     </footer>
   </body>
